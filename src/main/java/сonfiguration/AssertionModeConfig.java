@@ -6,7 +6,7 @@ import static com.codeborne.selenide.AssertionMode.SOFT;
 import static com.codeborne.selenide.AssertionMode.STRICT;
 
 public interface AssertionModeConfig {
-    public default void assertionMode(String mode) {
+    default void assertionMode(String mode) {
         /**
          * Режим утверждения
          */
