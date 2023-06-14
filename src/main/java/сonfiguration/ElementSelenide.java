@@ -1,3 +1,5 @@
+package сonfiguration;
+
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
@@ -7,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.*;
 
-public class Selenide {
+interface ElementSelenide {
     private void selenide() {
         SelenideElement cssSelector = $("String cssSelector"); // – возвращает объект типа SelenideElement, который представляет первый найденный по CSS селектору элемент на странице
         SelenideElement xpath = $x("String xpath"); // – возвращает объект типа SelenideElement, который представляет первый найденный по CSS селектору элемент на странице
